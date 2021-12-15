@@ -1,8 +1,12 @@
 {
   "name": "weather-cli",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "CLI for getting weather",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,14 +14,19 @@
     "type": "git",
     "url": "git+https://github.com/Devergence/weather-cli.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Devergence",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Devergence/weather-cli/issues"
   },
   "homepage": "https://github.com/Devergence/weather-cli#readme",
   "dependencies": {
-    "axios": "^0.24.0"
+    "axios": "^0.24.0",
+    "chalk": "^5.0.0",
+    "dedent-js": "^1.0.1"
   }
 }
